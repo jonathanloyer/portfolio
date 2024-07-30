@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('/assets/img/hk.webp') no-repeat center center fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #00ff00;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+main {
+    text-align: center;
+}
+
+canvas {
+    border: 2px solid #00ff00;
+    background-color: #111;
+    touch-action: none; /* Désactive le comportement par défaut des événements tactiles */
+}
+
+.hidden {
+    display: none;
+}
+
+#playerSelection button {
+    background-color: #00ff00;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+}
+
+#playerSelection button:hover {
+    background-color: #fff;
+    color: #00ff00;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.player-score {
+    background: #3500D3;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+}

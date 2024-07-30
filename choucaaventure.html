@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu d'Aventure Rétrogaming</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/chouca.css">
+</head>
+<body>
+    <nav>
+        <div class="logo" onclick="scrollToTop()">Squarejet</div>
+        <div class="nav-links">
+            <label for="numPlayers">Nombre de joueurs:</label>
+            <select id="numPlayers">
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+        </div>
+    </nav>
+    <div id="gameContainer">
+        <img id="backgroundImage" src="/assets/img/gs.jpg" alt="Background">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+    <div class="dashboard">
+        <div>Score Jochouca: <span id="score1">0</span></div>
+        <div>Score Chouquette: <span id="score2">0</span></div>
+        <div>Temps de jeu: <span id="timePlayed">0</span> heures</div>
+    </div>
+    <script src="/assets/js/chouca.js"></script>
+</body>
+</html>

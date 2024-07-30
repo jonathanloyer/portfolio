@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive; /* Police de style rétrogaming */
+    background: linear-gradient(135deg, #0C0032 0%, #190061 50%, #240090 100%); /* Dégradé futuriste */
+    color: #FFFFFF; /* Texte blanc */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    margin-left: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+.logo {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+header {
+    background-color: rgba(40, 40, 40, 0.9); /* Couleur de fond gris foncé avec transparence */
+    padding: 20px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+}
+
+header h1, header h2 {
+    margin: 0;
+    color: #FFFFFF;
+}
+
+nav {
+    margin-right: 20px; /* Ajustez la marge selon vos besoins */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #3500D3; /* Couleur bleu vif */
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.burger-menu img.burger-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+.mobile-menu {
+    background-color: #282828; /* Couleur de fond gris foncé */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1001;
+    background-image: url('images/menu-background.jpg'); /* Image de fond pour le menu burger */
+    background-size: cover;
+    background-position: center;
+}
+
+.mobile-menu.hidden {
+    display: none;
+}
+
+.mobile-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    margin: 20px 0;
+}
+
+.mobile-menu ul li a {
+    color: #3500D3; /* Couleur bleu vif */
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 70px 20px 50px 20px;
+    flex: 1;
+    margin-top: 100px; /* Ajustement pour compenser la nav fixe */
+}
+
+#acceuil {
+    background-image: url('/assets/img/fd.jpg'); /* Image de fond pour la section d'accueil */
+    background-size: cover;
+    background-position: center;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour le texte */
+}
+
+footer {
+    background-color: #282828; /* Couleur de fond gris foncé */
+    color: #FFFFFF;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+#acceuil {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ajustement pour occuper toute la hauteur de la fenêtre */
+}
+
+#acceuil .intro {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#acceuil .intro h1 {
+    margin-bottom: 20px; /* Espacement entre le titre et le paragraphe */
+}
+
+#acceuil .intro p {
+    margin-bottom: 20px; /* Espacement entre le paragraphe et l'image du robot */
+}
+
+.robot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Espacement au-dessus de l'image du robot */
+}
+
+.robot-head {
+    width: 150px;
+    height: auto;
+}
+
+.robot-mouth {
+    width: 30px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    bottom: 10px;
+    animation: speak 1s infinite;
+}
+
+@keyframes speak {
+    0%, 100% {
+        height: 10px;
+    }
+    50% {
+        height: 2px;
+    }
+}
+
+/* Styles supplémentaires pour les sections */
+#profil, #direction, #confiance, #competences, #impact, #engagement, #cv, #portfolio {
+    background-color: rgba(40, 40, 40, 0.9);
+    border: 2px solid #3500D3; /* Bordure bleu vif */
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#profil .profile-container, #direction .profile-container, #confiance .profile-container, #competences .profile-container, #impact .profile-container, #engagement .profile-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.profile-photo {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+#profil p, #direction p, #confiance p, #competences p, #impact p, #engagement p {
+    max-width: 600px;
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 1.8; /* Espacement entre les lignes */
+    margin-bottom: 20px; /* Espacement entre les paragraphes */
+}
+
+#profil h2, #direction h2, #confiance h2, #competences h2, #impact h2, #engagement h2 {
+    margin-bottom: 20px; /* Espacement sous les titres */
+}
+
+/* Styles pour le CV */
+.cv-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cv-image {
+    max-width: 50%; /* Taille maximale de l'image du CV */
+    height: auto;
+    border: 2px solid #3500D3; /* Bordure bleu vif */
+    margin: 20px 0;
+}
+
+.cv-download-button {
+    padding: 10px 20px;
+    background-color: #3500D3; /* Fond bleu vif */
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #3500D3;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cv-download-button:hover {
+    background-color: #240090; /* Fond violet foncé */
+    color: #FFFFFF;
+}
+
+/* Styles pour l'image du portfolio */
+.portfolio-image {
+    width: 200px;
+    height: auto;
+    border: 2px solid #3500D3; /* Bordure bleu vif */
+    margin: 10px;
+}
+
+/* Styles pour les cartes de projet */
+.project-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 20px 0; /* Ajout d'un espacement en bas */
+}
+
+.project-list li {
+    margin: 10px 0; /* Espacement entre les éléments de la liste */
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center; /* Centrer les cartes horizontalement */
+    flex-wrap: wrap; /* Permettre aux cartes de passer à la ligne suivante si nécessaire */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuer l'espace entre les éléments de la carte */
+    align-items: center;
+    background-color: #282828; /* Fond gris foncé */
+    border: 2px solid #3500D3; /* Bordure bleu vif */
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px; /* Largeur fixe pour les cartes */
+    height: 300px; /* Hauteur fixe pour les cartes */
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    margin-top: 10px;
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: auto;
+    max-height: 100px; /* Limiter la hauteur de l'image pour qu'elle soit plus petite */
+    object-fit: cover; /* Couper l'image pour qu'elle s'adapte au conteneur */
+    border-bottom: 2px solid #3500D3; /* Bordure bleu vif */
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #3500D3; /* Couleur bleu vif */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul.desktop-menu {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    section {
+        padding: 100px 10px 50px 10px;
+    }
+
+    #profil, #direction, #confiance, #competences, #impact, #engagement, #cv, #portfolio {
+        margin: 10px 5px;
+        padding: 15px;
+    }
+
+    #profil .profile-container, #direction .profile-container, #confiance .profile-container, #competences .profile-container, #impact .profile-container, #engagement .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin: 0 0 20px 0;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #profil, #direction, #confiance, #competences, #impact, #engagement, #cv, #portfolio {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header h2 {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    #profil, #direction, #confiance, #competences, #impact, #engagement, #cv, #portfolio {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header h2 {
+        font-size: 0.8em;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        margin-bottom: 10px;
+    }
+}

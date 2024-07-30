@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Hockey - Jonathan Loyer</title>
+    <link rel="stylesheet" href="/assets/css/hockey.css">
+</head>
+<body>
+    <header>
+        <h1>Jeu de Hockey</h1>
+    </header>
+    <main>
+        <div id="playerSelection">
+            <h2>Combien de joueurs?</h2>
+            <button onclick="startGame(1)">1 Joueur</button>
+            <button onclick="startGame(2)">2 Joueurs</button>
+        </div>
+        <canvas id="hockeyCanvas" class="hidden"></canvas>
+        <div id="dashboard" class="hidden">
+            <div class="player-score">
+                <h3>Joueur 1</h3>
+                <p id="score1">0</p>
+            </div>
+            <div class="player-score">
+                <h3>Joueur 2</h3>
+                <p id="score2">0</p>
+            </div>
+        </div>
+    </main>
+    <script src="/assets/js/hockey.js"></script>
+</body>
+</html>
