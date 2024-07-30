@@ -97,7 +97,7 @@ nav ul li a {
     align-items: center;
     flex-direction: column;
     z-index: 1001;
-    background-image: url('images/menu-background.jpg'); /* Image de fond pour le menu burger */
+    background-image: url("../img/d.jpg"); /* Image de fond pour le menu burger */
     background-size: cover;
     background-position: center;
 }
@@ -117,7 +117,7 @@ nav ul li a {
 }
 
 .mobile-menu ul li a {
-    color: #3500D3; /* Couleur bleu vif */
+    color: gold; /* Couleur bleu vif */
     text-decoration: none;
     font-size: 1.5em;
 }
