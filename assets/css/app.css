@@ -129,7 +129,7 @@ section {
 }
 
 #acceuil {
-    background-image: url('/assets/img/fd.jpg'); /* Image de fond pour la section d'accueil */
+    background-image: url('../img/fd.jpg'); /* Image de fond pour la section d'accueil */
     background-size: cover;
     background-position: center;
     color: #FFFFFF;
