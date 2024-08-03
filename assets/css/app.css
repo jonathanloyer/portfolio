@@ -221,10 +221,11 @@ footer {
     margin-right: 20px;
 }
 
+
 #profil p, #direction p, #confiance p, #competences p, #impact p, #engagement p {
     max-width: 600px;
     text-align: justify;
-    margin: 0 auto;
+    margin: 0 0 0 105px;
     line-height: 1.8; /* Espacement entre les lignes */
     margin-bottom: 20px; /* Espacement entre les paragraphes */
 }
